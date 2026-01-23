@@ -70,10 +70,10 @@ payments_data = {
 payments_df = pd.DataFrame(payments_data)
 
 #convert to csv file
-users_data_df.to_csv("users.csv",index=False)
-orders_df.to_csv("orders.csv",index=False)
-order_items_df.to_csv("order_items.csv",index=False)
-payments_df.to_csv("payments.csv",index=False)
+users_data_df.to_csv("users.csv",index=True)
+orders_df.to_csv("orders.csv",index=True)
+order_items_df.to_csv("order_items.csv",index=True)
+payments_df.to_csv("payments.csv",index=True)
 print("\nFile saved as users.csv\n")
 print("\nFile saved as orders.csv\n")
 print("\nFile saved as order_items.csv\n")
